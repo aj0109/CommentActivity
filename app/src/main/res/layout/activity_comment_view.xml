@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#2196F3"
+        android:text="Title"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:hint="Comment"
+        android:textSize="17sp"
+        android:gravity="center_vertical"
+        android:inputType="textMultiLine|textShortMessage"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:ellipsize="end" />        <!-- Fill entire width -->
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
